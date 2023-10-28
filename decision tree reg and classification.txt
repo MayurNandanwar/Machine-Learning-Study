@@ -1,0 +1,34 @@
+--> dexision tree for Regression Problem 
+
+--> for regression problem we try to minimize residual at time of training and for predicytion of unseen data output will be average of data point with 
+	output available in leaf node.
+	
+--> for regression we can not use gini impurity and entropy so we use here varience reduction 
+
+--> Process : 
+	1 --> split data using root node (Binary split)
+	2 --> for regression we finde variance of root node - variance of child node
+	3 --> varience reduction(VR) = variance of root node - sum((Wi)*(variance of child)) here we have binary split so two child 
+	4 --> min varience tree is selected 
+	
+--> three type of decision tree model ID3 this is used for only classification problem where target is class
+--> C4.5 is improved version of ID3 used for classification problem 
+--> CART model is used for classification and regression model 
+
+--> some time due to saperation problem of underfitting and overfitting problem arise.
+--> there are prunning technique like post pruning called backward pruning  and prepruning forward pruning to reduce overfitting and under fitting.
+  
+
+
+
+classification :
+
+--> 
+
+--> how can we say split is impure --> when maximum value of Entropy is 1 and max value of information gain is 0.5
+				   --> entropy ranges from 0 to 1 and gini impurity ranges from 0 to 0.5 
+
+--> purity if we say according to decision tree from where further no split will happen. To identify purity of split we use gini impurity or Entropy.
+
+--> when should use gini or Entropy --> if we have larger dataset then we should go for gini because of its equation has simple maths where in entropy has log equation takes time for calc.
+
